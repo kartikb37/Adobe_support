@@ -1,0 +1,51 @@
+@mixin wrapper($w: 100%){
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: $w;
+}
+ 
+  $prefixes: "webkit", "moz", "ms", "o", "none";
+  @mixin prefix($property, $arguments) {
+    @each $prefix in $prefixes {
+      @if $prefix == "none" {
+        #{$property}: $arguments;
+      } @else {
+        -#{$prefix}-#{$property}: $arguments;
+      }
+    }
+  }
+
+  @mixin brightness($value) {
+    -webkit-filter: #{"brightness(#{$value})"};
+    -moz-filter: #{"brightness(#{$value})"};
+    filter:#{"brightness(#{$value})"};
+}
+  
+  
+@mixin bp($point) {
+  
+  $bp-desktoptolaptopview: "(min-width: 1400px)";
+  $bp-laptopzoomoutview:"(min-width: 993px)";
+  $bp-laptopview:"(max-width: 992px)";
+  $bp-tabletview: "(max-width: 768px)";
+  $bp-tableproview: "(max-width: 1024px)";
+
+  @if $point == desktoptolaptopview {
+    @media #{$bp-desktoptolaptopview} { @content; }
+  }
+  @else if $point ==laptopzoomoutview {
+    @media #{$bp-laptopzoomoutview} { @content; }
+  }
+  @else if $point == laptopview {
+    @media #{$bp-laptopview} { @content; }
+  }
+  @else if $point == tabletview {
+    @media #{$bp-tabletview} { @content; }
+  }
+  @else if $point == tableproview{
+    @media #{$bp-tableproview}  { @content; }
+  }
+
+} 
+  

@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html class="spectrum spectrum--medium spectrum--light">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Adobe</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <nav id="nav" class="navbar" role="navigation" aria-label="Main navigation">
+         <div class="container">
+            <div class="navbar-brand">
+               <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               </a>
+               <a class="navbar-item is-padded-right-0 has-text-weight-bold is-active" href="#home">Adobe Experience League</a>
+               <div class="is-flex is-vcentered">
+                  <div class="navbar-item no-bg is-hidden-desktop">
+                     <button data-id="signin" class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM">
+                     <span class="spectrum-Button-label">Sign In</span>
+                     </button>
+                  </div>
+                  <a data-id="apps" data-tabletmenu="true" class="navbar-link is-arrowless is-hidden is-hidden-mobile is-hidden-desktop" title="Adobe Applications">
+                     <figure class="image is-18x18">
+                        <img src="assets/images/apps_gray.svg"  alt="Adobe Applications">
+                     </figure>
+                  </a>
+                  <div data-id="profile" class="navbar-item has-dropdown is-hoverable is-hidden is-hidden-desktop">
+                     <a data-id="profile-menu" class="navbar-link is-arrowless no-bg" title="Menu">
+                        <figure class="image is-29x29 avatar">
+                           <img data-id="avatar" src="assets/images/upload.svg" alt="Avatar">
+                        </figure>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="navbar-menu">
+               <div class="navbar-start">
+                  <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+                     <a class="navbar-link is-arrowless no-bg" data-droptrigger="learn-dropdown" title="Learn">
+                        Learn
+                        <span class="is-flex is-vcentered is-margin-left-small">
+                           <figure class="image is-16x16 is-inline-block" data-label="Learn"><img class="nav-chevron" src="assets/images/chevron_right.svg" alt="Expand menu"></figure>
+                        </span>
+                     </a>
+                     <div class="navbar-dropdown is-padded-bottom-big">
+                        <a href="#courses" data-id="courses" data-dropdown="learn-dropdown" class="navbar-item" title="Courses">Courses</a>
+                        <a href="#dashboard/learning" data-dropdown="learn-dropdown" class="navbar-item is-hidden" title="Recommended courses" disabled="">Recommended courses</a>
+                        <a href="/docs/home-tutorials.html?lang=en" data-dropdown="learn-dropdown" class="navbar-item" title="Tutorials">Tutorials</a>
+                        <a href="#instructor-led" data-dropdown="learn-dropdown" class="navbar-item" title="Instructor-led">Instructor-led training</a>
+                        <a href="#recommended" data-dropdown="learn-dropdown" class="navbar-item" title="Browse content library">Browse content library</a>
+                        <a href="#learn" data-dropdown="learn-dropdown" class="navbar-item" title="View all learning options">View all learning options</a>
+                     </div>
+                  </div>
+                  <div class="navbar-item is-paddingless is-hoverable is-hidden-touch">
+                     <a href="/docs/?lang=en" class="navbar-link is-arrowless" title="Documentation">Documentation</a>
+                  </div>
+                  <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+                     <a class="navbar-link is-arrowless" title="Community">
+                        Community
+                        <span class="is-flex is-vcentered is-margin-left-small">
+                           <figure class="image is-16x16 is-inline-block" data-label="Community"><img class="nav-chevron" src="assets/images/chevron_right.svg" alt="Expand menu"></figure>
+                        </span>
+                     </a>
+                     <div class="navbar-dropdown is-padded-top-0 is-padded-bottom-0">
+                        <div class="columns is-marginless">
+                           <div class="column community-dropdown is-narrow">
+                              <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" class="navbar-item" title="Community home" target="_blank">Community home</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-advertising-cloud/ct-p/adobe-advertising-cloud-community?profile.language=en" class="navbar-item" title="Advertising Cloud" target="_blank">Advertising Cloud</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=en" class="navbar-item" title="Analytics" target="_blank">Analytics</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-audience-manager/ct-p/adobe-audience-manager-community?profile.language=en" class="navbar-item" title="Audience Manager" target="_blank">Audience Manager</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=en" class="navbar-item" title="Campaign Standard" target="_blank">Campaign Standard</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-cloud/ct-p/adobe-experience-cloud-community?profile.language=en" class="navbar-item" title="Experience Cloud" target="_blank">Experience Cloud</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=en" class="navbar-item" title="Experience Manager" target="_blank">Experience Manager</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=en" class="navbar-item" title="Experience Platform" target="_blank">Experience Platform</a>
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-target/ct-p/adobe-target-community?profile.language=en" class="navbar-item" title="Target" target="_blank">Target</a>
+                              <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" class="navbar-item" title="View all communities" target="_blank">View all communities</a>
+                              <a href="#feedback" class="navbar-item is-hidden" title="Feedback Panel">Feedback Panel</a>
+                           </div>
+                           <div data-id="nav-promo" class="column is-hidden"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navbar-item is-paddingless is-hoverable is-hidden-touch">
+                     <a class="navbar-link is-arrowless is-active" href="#support" title="Support">Support</a>
+                  </div>
+               </div>
+               <div class="navbar-end">
+                  <div class="navbar-item is-paddingless no-bg is-hidden-touch">
+                     <a data-id="search" class="navbar-link is-arrowless no-bg" title="Search">
+                        <figure class="image is-14x14 search">
+                           <img src="assets/images/search_grey.svg"  alt="Search">
+                        </figure>
+                     </a>
+                  </div>
+                  <div class="navbar-item has-dropdown is-hoverable no-bg is-hidden-touch">
+                     <div data-id="lang" class="navbar-link is-arrowless">
+                        <figure class="image is-18x18">
+                           <img src="assets/images/globegrid.svg"  alt="Select Your Language">
+                        </figure>
+                        <div data-id="lang-menu" class="bg-white navbar-dropdown is-hidden">
+                           <a class="navbar-item" data-value="de">Deutsch</a>
+                           <a class="navbar-item" data-value="en" selected="">English</a>
+                           <a class="navbar-item" data-value="es">Español</a>
+                           <a class="navbar-item" data-value="fr">Français</a>
+                           <a class="navbar-item" data-value="it">Italiano</a>
+                           <a class="navbar-item" data-value="nl">Nederlands</a>
+                           <a class="navbar-item" data-value="pt-BR">Português</a>
+                           <a class="navbar-item" data-value="sv">Svenska</a>
+                           <a class="navbar-item" data-value="zh-Hans">中文 (简体)</a>
+                           <a class="navbar-item" data-value="zh-Hant">中文 (繁體)</a>
+                           <a class="navbar-item" data-value="ja">日本語</a>
+                           <a class="navbar-item" data-value="ko">한국어</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg is-hidden-touch">
+                     <a data-id="search" class="navbar-link is-arrowless no-bg" title="Search">
+                        <figure class="image is-14x14 search">
+                           <img src="assets/images/header_2.png"  alt="Menu">
+                        </figure>
+                     </a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg is-hidden-touch">
+                     <a data-id="search" class="navbar-link is-arrowless no-bg" title="Search">
+                        <figure class="image is-14x14 search">
+                           <img src="assets/images/header_1.png"  alt="User">
+                        </figure>
+                     </a>
+                  </div>
+                  <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+                     <a data-id="apps" class="navbar-link is-hidden is-arrowless" title="Adobe Applications">
+                        <figure class="image is-18x18">
+                           <img src="assets/images/apps_gray.svg"  alt="Adobe Applications">
+                        </figure>
+                     </a>
+                     <div id="apps" class="navbar-dropdown is-padded-bottom-big">
+                        <a href="//experiencecloud.adobe.com/" target="_blank" class="navbar-item" title="Adobe Experience Cloud">Adobe Experience Cloud</a>
+                        <a href="//documentcloud.adobe.com/link/home/" target="_blank" class="navbar-item" title="Adobe Document Cloud">Adobe Document Cloud</a>
+                     </div>
+                  </div>
+                  <div data-id="profile" class="navbar-item has-dropdown is-hoverable is-hidden is-hidden-touch">
+                     <a class="navbar-link is-arrowless no-bg" title="Menu">
+                        <figure class="image is-29x29 avatar">
+                           <img data-id="avatar" src="assets/images/upload.svg" alt="Avatar">
+                        </figure>
+                     </a>
+                     <div class="navbar-dropdown is-right">
+                        <a href="#dashboard/welcome" data-id="preferences" data-showon="welcome" class="navbar-item is-hidden" disabled="">Profile</a>
+                        <a href="#dashboard/profile" data-id="preferences" data-showon="profile" class="navbar-item">Profile</a>
+                        <span class="u-tooltip-showOnHover">
+                           <a href="#dashboard/awards" data-id="preferences" data-disableon="welcome" class="navbar-item">Achievements</a>
+                           <div class="spectrum-Tooltip spectrum-Tooltip--left spectrum-Tooltip--info is-hidden">
+                              <span class="spectrum-Tooltip-label">View your awards after completing your profile.</span>
+                              <span class="spectrum-Tooltip-tip"></span>
+                           </div>
+                        </span>
+                        <span class="u-tooltip-showOnHover">
+                           <a href="#dashboard/bookmarks" data-id="preferences" data-disableon="welcome" class="navbar-item">Bookmarks</a>
+                           <div class="spectrum-Tooltip spectrum-Tooltip--left spectrum-Tooltip--info is-hidden">
+                              <span class="spectrum-Tooltip-label">View your bookmarks after completing your profile.</span>
+                              <span class="spectrum-Tooltip-tip"></span>
+                           </div>
+                        </span>
+                        <a data-id="signout" class="navbar-item">Sign out</a>
+                     </div>
+                  </div>
+                  <div class="navbar-item no-bg is-hidden-touch">
+                     <a href="//business.adobe.com" class="navbar-link is-arrowless no-bg" target="_blank">
+                        <figure class="image is-24x24">
+                           <img src="assets/images/adobe-red-logo.svg"  alt="Adobe">
+                        </figure>
+                     </a>
+                  </div>
+                  <a class="collapsible is-flex navbar-item is-hidden-desktop" data-menu="nav" data-collapsible="true" data-label="Learn">
+                     <div class="has-align-start is-padded-left-big navbar-link is-arrowless">Learn</div>
+                     <div class="has-align-end navbar-link is-arrowless">
+                        <figure class="image is-16x16 is-inline-block" data-label="Learn">
+                           <img src="assets/images/chevron_right.svg"  alt="Expand menu">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="content is-margin-bottom-0" data-content="true" data-menu="nav" data-label="Learn">
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="#courses" data-id="courses" class="navbar-link is-arrowless no-bg is-hidden-desktop">Courses</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="#dashboard/learning" class="navbar-link is-arrowless no-bg is-hidden-desktop is-hidden" disabled="">Recommended courses</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="/docs/home-tutorials.html?lang=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Tutorials">Tutorials</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="#instructor-led" class="navbar-link is-arrowless no-bg is-hidden-desktop">Instructor-led training</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="#recommended" class="navbar-link is-arrowless no-bg is-hidden-desktop">Browse content library</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="#learn" class="navbar-link is-arrowless no-bg is-hidden-desktop">View all learning options</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg is-hidden">
+                        <a href="#search" class="navbar-link is-hidden" title="Search Results">Search Results</a>
+                     </div>
+                  </div>
+                  <a href="/docs/?lang=en" class="navbar-link is-padded-left-big is-arrowless is-hidden-desktop" data-menu="nav">Documentation</a>
+                  <a class="collapsible is-flex navbar-item is-hidden-desktop" data-menu="nav" data-collapsible="true" data-label="Community">
+                     <div class="has-align-start is-padded-left-big navbar-link is-arrowless">Community</div>
+                     <div class="has-align-end navbar-link is-arrowless">
+                        <figure class="image is-16x16 is-inline-block" data-label="Community">
+                           <img src="assets/images/chevron_right.svg"  alt="Expand menu">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="content is-margin-bottom-0" data-content="true" data-menu="nav" data-label="Community">
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Community home" target="_blank">Community home</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-advertising-cloud/ct-p/adobe-advertising-cloud-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Advertising Cloud" target="_blank">Advertising Cloud</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Analytics" target="_blank">Analytics</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-audience-manager/ct-p/adobe-audience-manager-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Audience Manager" target="_blank">Audience Manager</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Campaign Standard" target="_blank">Campaign Standard</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-cloud/ct-p/adobe-experience-cloud-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Experience Cloud" target="_blank">Experience Cloud</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Experience Manager" target="_blank">Experience Manager</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Experience Platform" target="_blank">Experience Platform</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/t5/adobe-target/ct-p/adobe-target-community?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="Target" target="_blank">Target</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" class="navbar-link is-arrowless no-bg is-hidden-desktop" title="View all communities" target="_blank">View all communities</a>
+                     </div>
+                     <div class="navbar-item is-paddingless no-bg">
+                        <a href="#feedback" class=" navbar-link is-arrowless no-bg is-hidden-desktop" title="Feedback Panel">Feedback Panel</a>
+                     </div>
+                  </div>
+                  <a href="#support" class="navbar-link is-padded-left-big is-arrowless is-hidden-desktop " data-menu="nav">Support</a>
+                  <hr class="is-marginless" data-menu="nav">
+                  <a href="#dashboard/welcome" data-id="preferences" data-showon="welcome" data-menu="profile" class="is-flex has-align-end navbar-link is-arrowless is-hidden-desktop is-hidden" disabled="">Profile</a>
+                  <a href="#dashboard/profile" data-id="preferences" data-showon="profile" data-menu="profile" class="is-flex has-align-end navbar-link is-arrowless is-hidden-desktop">Profile</a>
+                  <span class="u-tooltip-showOnHover is-block" data-menu="profile">
+                     <a href="#dashboard/awards" data-id="preferences" data-disableon="welcome" class="navbar-link is-arrowless is-hidden-desktop">Achievements</a>
+                     <div class="spectrum-Tooltip spectrum-Tooltip--left spectrum-Tooltip--info is-hidden">
+                        <span class="spectrum-Tooltip-label">View your awards after completing your profile.</span>
+                        <span class="spectrum-Tooltip-tip"></span>
+                     </div>
+                  </span>
+                  <span class="u-tooltip-showOnHover is-block" data-menu="profile">
+                     <a href="#dashboard/bookmarks" data-id="preferences" data-disableon="welcome" class="navbar-link is-arrowless is-hidden-desktop">Bookmarks</a>
+                     <div class="spectrum-Tooltip spectrum-Tooltip--left spectrum-Tooltip--info is-hidden">
+                        <span class="spectrum-Tooltip-label">View your bookmarks after completing your profile.</span>
+                        <span class="spectrum-Tooltip-tip"></span>
+                     </div>
+                  </span>
+                  <a href="//experiencecloud.adobe.com/" data-menu="apps" target="_blank" class="navbar-link is-flex has-align-end is-arrowless is-hidden-desktop" title="Adobe Experience Cloud">Adobe Experience Cloud</a>
+                  <a href="//documentcloud.adobe.com/" data-menu="apps" target="_blank" class="navbar-link is-flex has-align-end is-arrowless is-hidden-desktop" title="Adobe Document Cloud">Adobe Document Cloud</a>
+                  <a data-id="search" class="navbar-link is-padded-left-big is-arrowless is-hidden-desktop" data-menu="nav">Search</a>
+                  <hr class="is-marginless" data-menu="profile">
+                  <a data-id="signout" class="navbar-link is-arrowless is-hidden is-hidden-desktop" data-menu="profile">Sign Out</a>
+                  <a class="collapsible is-flex navbar-item is-hidden-desktop" data-menu="nav" data-collapsible="true" data-label="Change language">
+                     <div class="has-align-start is-padded-left-big navbar-link is-arrowless">Change language</div>
+                     <div class="has-align-end navbar-link is-arrowless">
+                        <figure class="image is-16x16 is-inline-block" data-label="Change language">
+                           <img src="assets/images/chevron_right.svg"  alt="Expand menu">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="content is-margin-left-big-big is-margin-bottom-0" data-id="lang" data-content="true" data-menu="nav" data-label="Change language">
+                     <div data-id="lang-menu" class="bg-white navbar-dropdown">
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="de">Deutsch</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="en" selected="">English</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="es">Español</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="fr">Français</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="it">Italiano</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="nl">Nederlands</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="pt-BR">Português</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="sv">Svenska</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="zh-Hans">中文 (简体)</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="zh-Hant">中文 (繁體)</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="ja">日本語</a>
+                        </div>
+                        <div class="navbar-item is-paddingless no-bg">
+                           <a class="navbar-link is-arrowless no-bg is-hidden-desktop" data-value="ko">한국어</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <div class="columns is-marginless ">
+         <div class="support_tab_wrapper w-100 relative is-flex">
+            <div class="buttonWrapper left_support_tabs_sec">
+               <span class="has-text-black has-text-weight-bold"> Support</span>
+               <div class="container">
+                  <button class="support_tab_button active"  data-id="home">Home</button>
+                  <button class="support_tab_button" data-id="Open_Ticket">Open Ticket</button>
+                  <button class="support_tab_button" data-id="MyCases">My Cases</button>
+               </div>
+            </div>
+            <div class="right_support_tabs_sec">
+             <div class="contentWrapper">
+               <div class="content p-0 active m-0" id="home">
+                  <!-- Banner Section --> 
+                  <div class="banner_outer_sec is-padded-top-big-big">
+                     <div class="banner_sec_support  ">
+                        <h1 class="title is-1 m-0">How can we help? </h1>
+                        <h2 class="is-6 has-text-weight-normal m-0">Search for help and support here.</h2>
+                        <div class="field">
+                           <p class="control has-icons-left">
+                              <input  class="input search is-margin-top-big" placeholder="Find answers and resourses...">
+                              <span class="icon is-small is-left is-margin-top-big">
+                              <img src="assets/images/search_grey.svg"  alt="Search">
+                              </span>
+                           </p>
+                        </div>
+                        <div class="d-flex align-center">
+                           <span class="has-text-black has-text-weight-bold">Common troubleshooting topics:</span>
+                           <div class="support_banner_items">
+                              <a href="#" title="manage entitlements" class=" radius-5 ">manage entitlements</a>
+                              <a href="#" title="troubleshoot forms" class=" radius-5">troubleshoot forms</a>
+                              <a href="#" title="security best practices" class=" radius-5">security best practices</a>
+                              <a href="#" title="user attribution" class=" radius-5">user attribution</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Banner Section -->
+                  <!-- Cards Section -->
+                  <div class="is-padded-bottom-big-big-big is-padded-top-big is-padded-right-big is-padded-left-big">
+                        <div class="columns  is-multiline  ">
+                           <div class="column is-6 ">
+                              <div class="cards-inner  is-padded-bottom-big-big radius-5 ">
+                                 <div class="card-top-img">
+                                    <img src="assets/images/cards-bg.png" alt="Cards" height="101" width="200" /> 
+                                 </div>
+                                 <div class="is-padded-left-big-big is-padded-right-big-big">
+                                    <h2 class="is-margin-bottom-big has-text-blackest is-size-25 m-0 has-text-weight-bold "> Open a support ticket.</h2>
+                                    <p class="is-margin-bottom-big has-text-blackest"> Loream ipusm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut pabdor et dolore.</p>
+                                    <a href="#" title="Get started" class="site_cta"> Get started</a> 
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="column is-6 ">
+                              <div class="cards-inner  is-padded-bottom-big-big radius-5 ">
+                                 <div class="card-top-img">
+                                    <img src="assets/images/view-your-cases-bg.png" alt="View your cases" height="101" width="200" /> 
+                                 </div>
+                                 <div class="is-padded-left-big-big is-padded-right-big-big">
+                                    <h2 class="is-margin-bottom-big has-text-blackest is-size-25 m-0 has-text-weight-bold"> View your cases.</h2>
+                                    <p class="is-margin-bottom-big has-text-blackest"> Loream ipusm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut pabdor et dolore.</p>
+                                    <a href="#" title="Get started" class="site_cta"> Go Now</a> 
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                  </div>
+                  <!-- Cards Section -->
+                  <!-- Article section-->
+                  <div class="container">
+                     <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big"> Look through somne of these recommended articles.</h2>
+                     <div class=" article-main-sec columns">
+                        <div class="column is-half is-one-quarter-desktop ">
+                           <div class=" articles-inner radius-5">
+                              <h3  class="head-sm">ANALYTICS TUTORIAL </h3>
+                              <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">First-time in Adobe Analytics implementation </h4>
+                              <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
+                              <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                                 <span>Updated: 26-05-2021</span>
+                                 <a href="#" title="Get started" class="site_cta"> View now</a> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="column is-half is-one-quarter-desktop ">
+                           <div class="articles-inner radius-5">
+                              <h3 class="head-sm"> TARGET DOCUMENTATION </h3>
+                              <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Implement Target </h4>
+                              <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
+                              <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                                 <span>Updated: 26-05-2021</span>
+                                 <a href="#" title="Get started" class="site_cta"> View now</a> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="column is-half is-one-quarter-desktop ">
+                           <div class=" articles-inner radius-5">
+                              <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
+                              <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">What's New in Analytics Workspace </h4>
+                              <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit</p>
+                              <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                                 <span>Updated: 26-05-2021</span>
+                                 <a href="#" title="Get started" class="site_cta"> View now</a> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="column is-half is-one-quarter-desktop ">
+                           <div class=" articles-inner radius-5">
+                              <h3 class="head-sm"> ANALYTICS TUTORIAL </h3>
+                              <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Create a Data source for Analytics Data</h4>
+                              <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
+                              <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                                 <span>Updated: 26-05-2021</span>
+                                 <a href="#" title="Get started" class="site_cta"> View now</a> 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Article section-->
+                  <!-- Learning Resourses-->
+                  <div class="container is-padded-bottom-big-big-big is-padded-top-big-big-big ">
+                     <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big ">Additional Learning resourses.</h2>
+                     <div class="columns">
+                        <div class="column is-4">
+                           <div class="support_learning_inner_sec border columns is-vcentered">
+                              <div class="supprot_learning_image_sec">
+                                 <img src="assets/images/learing-resourses.png" alt="Learning Resourses" /> 
+                              </div>
+                              <div class="support_learning_descp_sec">
+                                 <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
+                                 <h4 class="is-size-6  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Develope the skills with personalized learning in Adobe Experience League.</h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="column is-4">
+                           <div class="support_learning_inner_sec border columns is-vcentered">
+                              <div class="supprot_learning_image_sec">
+                                 <img src="assets/images/learing-resourses.png"  alt="Learning Resourses"/> 
+                              </div>
+                              <div class="support_learning_descp_sec">
+                                 <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
+                                 <h4 class="is-size-6  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Develope the skills with personalized learning in Adobe Experience League.</h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="column is-4">
+                           <div class="support_learning_inner_sec border columns is-vcentered">
+                              <div class="supprot_learning_image_sec">
+                                 <img src="assets/images/learing-resourses.png"  alt="Learning Resourses"/> 
+                              </div>
+                              <div class="support_learning_descp_sec">
+                                 <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
+                                 <h4 class="is-size-6  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Develope the skills with personalized learning in Adobe Experience League.</h4>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Learning Resourses-->
+                  <!-- Help section-->   
+                  <div class="help-main-sec  is-padded-bottom-big-big-big is-padded-top-big-big-big">
+                     <div class="container">
+                        <div class="columns  is-multiline is-vcentered">
+                           <div class="column is-6 text-center">
+                              <img src="assets/images/help-banner.png" alt="need one-to-one help" /> 
+                           </div>
+                           <div class="column is-6 ">
+                              <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big ">Need one-on-one help? </h2>
+                              <p class="is-margin-bottom-big has-text-blackest">Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.</p>
+                              <a href="#" title="Get started" class="site_cta" tabindex="0"> More about office hours</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Help section-->
+                  <!-- Popular Topics-->
+                  <div class="light-grey-bg">
+                     <div class="container is-padded-bottom-big-big-big is-padded-top-big-big-big ">
+                        <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big ">Other popular topics.</h2>
+                        <div class="columns">
+                           <div class="column is-4 has-background-white  support_popular_topics">
+                              <div class="border is-padded-small radius-5">
+                                 <h3 class="head-sm has-text-blackest has-text-weight-bold">Experience LEAGUE </h3>
+                                 <ul class="list-no-style">
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="column is-4 has-background-white support_popular_topics">
+                              <div class="border is-padded-small radius-5">
+                                 <h3 class="head-sm has-text-blackest has-text-weight-bold">Experience LEAGUE </h3>
+                                 <ul class="list-no-style">
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="column is-4 has-background-white support_popular_topics">
+                              <div class="border is-padded-small radius-5">
+                                 <h3 class="head-sm has-text-blackest has-text-weight-bold ">Experience LEAGUE </h3>
+                                 <ul class="list-no-style">
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                    <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Popular Topics-->
+                  <!-- Need sec-->
+                  <div class="main-need-sec is-padded-bottom-big-big is-padded-top-big-big-big">
+                     <div class="container">
+                        <div class="columns">
+                           <div class="is-6 column">
+                              <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big ">Support when you need it.</h2>
+                              <p>Loream ipusm Loream ipusm Loream ipusm Loream ipusm Loream ipusm Loream ipusm Loream ipusm .</p>
+                              <a href="#" title="Get started" class="site_cta"> Get started</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Need sec-->
+               </div>
+            </div>
+            <div class="content p-0" id="Open_Ticket">
+               <div class="banner_outer_sec is-padded-top-big-big">
+                  <div class="banner_sec_support open-ticket ">
+                     <h2 class="title is-1  text-center is-margin-bottom-big-big">Hi Derek, let's open a ticket </h2>
+                     <form class="support_form_sec">
+                        <label class="is-inline-block is-margin-bottom-big has-text-weight-bold is-margin-bottom-small is-size-4">Select a product.</label>
+                        <select class="radius-5 app-none is-margin-bottom-big">
+                           <option value=""> Select</option>
+                           <option value="">Audience Manger</option>
+                        </select>
+                     </form>
+                  </div>
+               </div>
+               <!---->
+               <div class="wrapper-ex is-padded-bottom-big-big-big is-padded-top-big-big-big ">
+                  <form class="support_form_sec">
+                     <label class="is-inline-block is-margin-bottom-big has-text-weight-bold is-margin-bottom-small is-size-4">Select a product.</label>
+                     <select class="radius-5 app-none is-margin-bottom-big">
+                        <option value=""> Select</option>
+                        <option value="">Audience Manger</option>
+                     </select>
+                     <div class="is-margin-bottom-big">
+                        <label class="is-inline-block is-margin-bottom-big has-text-weight-bold is-margin-bottom-small is-size-4">Title</label>
+                        <input type="text" class="w-100 border radius-5 is-padded-bottom-big is-padded-top-big"/>
+                     </div>
+                     <div>
+                        <label class="is-inline-block is-margin-bottom-big has-text-weight-bold is-margin-bottom-small is-size-4">Additional information.</label>
+                        <textarea placeholder="Tell us about your issue..." class="w-100 border radius-5"> </textarea>
+                     </div>
+                  </form>
+               </div>
+               <!---->
+               <div class="is-padded-bottom-big-big-big is-padded-top-big-big-big ">
+                  <div class="wrapper-sm">
+                     <div class="columns  is-multiline  is-padded-big ">
+                        <div class="column is-6 ">
+                           <div class="cards-inner is-padded-big radius-5 ">
+                              <h2 class="is-margin-bottom-big has-text-blackest  m-0 has-text-weight-bold title is-5"> Try one-on-one help in office hours</h2>
+                              <p class="is-margin-bottom-big has-text-blackest"> Loream ipusm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut pabdor et dolore.</p>
+                              <a href="#" title="Get started" class="site_cta"> More about office hours</a> 
+                           </div>
+                        </div>
+                        <div class="column is-6 ">
+                           <div class="cards-inner is-padded-big radius-5 ">
+                              <h2 class="is-margin-bottom-big has-text-blackest  m-0 has-text-weight-bold title is-5"> Premier support, when you need it.</h2>
+                              <p class="is-margin-bottom-big has-text-blackest"> Loream ipusm dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut pabdor et dolore.</p>
+                              <a href="#" title="Get started" class="site_cta"> Loream ipusum dolor</a> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- -->
+               <!-- Article section-->
+               <div class="container">
+                  <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big">We think these Audience Manager articles might help...</h2>
+                  <div class=" article-main-sec columns">
+                     <div class="column is-half is-one-quarter-desktop ">
+                        <div class=" articles-inner radius-5">
+                           <h3  class="head-sm">ANALYTICS TUTORIAL </h3>
+                           <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">First-time in Adobe Analytics implementation </h4>
+                           <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
+                           <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                              <span>Updated: 26-05-2021</span>
+                              <a href="#" title="Get started" class="site_cta"> View now</a> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-half is-one-quarter-desktop ">
+                        <div class="articles-inner radius-5">
+                           <h3 class="head-sm"> TARGET DOCUMENTATION </h3>
+                           <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Implement Target </h4>
+                           <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
+                           <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                              <span>Updated: 26-05-2021</span>
+                              <a href="#" title="Get started" class="site_cta"> View now</a> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-half is-one-quarter-desktop ">
+                        <div class=" articles-inner radius-5">
+                           <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
+                           <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">What's New in Analytics Workspace </h4>
+                           <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit</p>
+                           <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                              <span>Updated: 26-05-2021</span>
+                              <a href="#" title="Get started" class="site_cta"> View now</a> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="column is-half is-one-quarter-desktop ">
+                        <div class=" articles-inner radius-5">
+                           <h3 class="head-sm"> ANALYTICS TUTORIAL </h3>
+                           <h4 class="is-size-9  has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Create a Data source for Analytics Data</h4>
+                           <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit.Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
+                           <div class="article_bottom_sec columns is-vcentered justify-content-between">
+                              <span>Updated: 26-05-2021</span>
+                              <a href="#" title="Get started" class="site_cta"> View now</a> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Article section-->
+               <!---->
+               <!-- Trobleshooting section-->
+               <div class="light-grey-bg">
+                  <div class="container is-padded-bottom-big-big-big is-padded-top-big-big-big ">
+                     <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big ">Common troubleshooting topics.</h2>
+                     <div class="columns">
+                        <div class="column is-4 has-background-white  support_popular_topics">
+                           <div class="border is-padded-small radius-5">
+                              <h3 class="head-sm has-text-blackest has-text-weight-bold">Experience LEAGUE </h3>
+                              <ul class="list-no-style">
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="column is-4 has-background-white support_popular_topics">
+                           <div class="border is-padded-small radius-5">
+                              <h3 class="head-sm has-text-blackest has-text-weight-bold">Experience LEAGUE </h3>
+                              <ul class="list-no-style">
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="column is-4 has-background-white support_popular_topics">
+                           <div class="border is-padded-small radius-5">
+                              <h3 class="head-sm has-text-blackest has-text-weight-bold ">Experience LEAGUE </h3>
+                              <ul class="list-no-style">
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                                 <li><a href="#" title="Find Experience League learning  pathways">Find Experience League learning  pathways</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Troubleshooting section-->
+            </div>
+            <div class="content p-0" id="MyCases">
+               <div class="banner_outer_sec is-padded-top-big-big ">
+                  <div class="container">
+                     <div class="banner_sec_support my-cases ">
+                        <h2 class="title is-1 m-0">How can we help? </h2>
+                        <p>Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
+                        <select class="radius-5 app-none">
+                           <option value="select">Select</option>
+                           <option value="Audience-Manager">Audience Manager</option>
+                        </select>
+                        <p class="is-6 has-text-weight-normal m-0">Change organizations to see your entitlements.</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- case table section-->
+               <div class="container is-padded-bottom-big-big-big-big  is-padded-top-big-big-big-big">
+                  <table class="support_table w-100">
+                     <thead>
+                        <tr>
+                           <th>
+                              CASE NUMBER
+                           </th>
+                           <th>
+                              SUBJECT / ADDITIONAL INFORMATION
+                           </th>
+                           <th>
+                              STATUS
+                           </th>
+                           <th>
+                              OPENED
+                           </th>
+                           <th>
+                              Date
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>12345678</td>
+                           <td>Loream ipusm dolor amit. Loream ipusm dolor </td>
+                           <td>In Review </td>
+                           <td>30-5-2020 05:34:06</td>
+                           <td>2/11/2021</td>
+                        </tr>
+                        <tr>
+                           <td>12345678</td>
+                           <td>Loream ipusm dolor amit. Loream ipusm dolor amit  Loream ipusm dolor</td>
+                           <td>In Review </td>
+                           <td>30-5-2020 05:34:06</td>
+                           <td>2/11/2021</td>
+                        </tr>
+                        <tr>
+                           <td>12345678</td>
+                           <td>Loream ipusm dolor amit. Loream ipusm d </td>
+                           <td>In Review </td>
+                           <td>30-5-2020 05:34:06</td>
+                           <td>2/11/2021</td>
+                        </tr>
+                        <tr>
+                           <td>12345678</td>
+                           <td>Loream ipusm dolor amit. Loream ipusm</td>
+                           <td>In Review </td>
+                           <td>30-5-2020 05:34:06</td>
+                           <td>2/11/2021</td>
+                        </tr>
+                        <tr>
+                           <td>12345678</td>
+                           <td>Loream ipusm dolor amit. Loream ipusm  </td>
+                           <td>In Review </td>
+                           <td>30-5-2020 05:34:06</td>
+                           <td>2/11/2021</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <!--Case title section -->
+                  <div class="columns is-multiline is-marginless has-text-blackest is-padded-bottom-big-big-big-big is-padded-top-big-big-big-big light-grey-bg">
+                     <div class="column  is-full-mobile is-8-desktop ">
+                        <div class="is-padded-bottom-big-big-big-big is-padded-top-big-big-big-big">
+                           <h2 class="has-text-weight-bold is-size-28 is-size-27-touch  is-marginless">Case Title  </h2>
+                           <p class="is-margin-bottom-big">Last updated : 02-06-2020 12:45:59 </p>
+
+                           <form class="support-form">
+                                 <textarea placeholder="Additional Comments" class="w-100 radius-5 border"> </textarea>
+                                 <div>
+                                    <button class="site_cta"> Add Comments</button>
+                                 </div>
+                           </form>
+                           <ul class="support_user_comment">
+                                 <li >
+                                    <div class="border radius-5 has-background-white  is-padded-small">
+                                    <div class="d-flex align-center justify-content-between is-margin-bottom-small">
+                                    <div class="d-flex align-center">
+                                       <span class="support_user_img"></span> <span class="is-padded-left-big">Mange Schoen | Support Engineer</span> 
+                                    </div>
+                                    <span>
+                                       01-06-2020 12:50:02
+                                    </span>
+                                 </div>
+                                    <p>@kyke smith loream smith sit amet, dolor. loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor   </p>
+                                 </div>
+                                 </li>
+                                 <li >
+                                    <div class="border radius-5 has-background-white  is-padded-small">
+                                    <div class="d-flex align-center justify-content-between is-margin-bottom-small">
+                                    <div class="d-flex align-center">
+                                       <span class="support_user_img"></span> 
+                                       <span class="is-padded-left-big">Mange Schoen | Support Engineer</span> 
+                                    </div>
+                                    <span>
+                                       01-06-2020 12:50:02
+                                    </span>
+                                 </div>
+                                    <p>@kyke smith loream smith sit amet, dolor. loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor   </p>
+                                 </div>
+                                 <div class="d-flex align-center justify-content-bet">
+                                    <div>
+                                 <p>Madge schon changed this case from open to in Review</p>
+                                 <p>Madge schon changed this case from open to in Review</p>
+                              </div>
+                                
+                              </div>
+                              
+                                 
+                              </div>
+                                 </li>
+                                 <li >
+                                    <div class="border radius-5 has-background-white  is-padded-small">
+                                    <div class="d-flex align-center justify-content-between is-margin-bottom-small">
+                                    <div class="d-flex align-center">
+                                       <span class="support_user_img"></span> <span class="is-padded-left-big">Mange Schoen | Support Engineer</span> 
+                                    </div>
+                                    <span>
+                                       01-06-2020 12:50:02
+                                    </span>
+                                 </div>
+                                    <p>@kyke smith loream smith sit amet, dolor. loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor   </p>
+                                 </div>
+                                 </li>
+                                
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="column   is-hidden-touch is-4-desktop ">
+                     </div>
+                  </div>
+                  <!--Case title section -->
+               </div>
+               <!-- case table section-->
+            </div>
+         </div>
+      </div>
+   </div>
+         <div class="support_tab_right_cta"><a href="#" title="Organization Name">Organization Name </a> </div>
+      </div>
+      <div id="footer" class="footer">
+         <div class="container">
+            <div class="footer-nav is-hidden-desktop">
+               <a class="collapsible is-padded-left-0 is-flex navbar-item has-text-weight-bold is-hidden-desktop" data-collapsible="true" data-label="Learn">
+                  <div class="has-align-start is-padded-left-0 navbar-link is-arrowless">Learn</div>
+                  <div class="has-align-end navbar-link is-arrowless">
+                     <figure class="image is-16x16 is-inline-block" data-label="Learn">
+                        <img src="/assets/img/chevron_right.svg" loading="lazy" alt="Expand menu">
+                     </figure>
+                  </div>
+               </a>
+               <div class="content is-margin-left-big is-margin-bottom-big" data-content="true" data-label="Learn">
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="#courses" data-id="courses" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop">Courses</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="#dashboard/learning" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop is-hidden" disabled="">Recommended courses</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="/docs/home-tutorials.html?lang=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Tutorials">Tutorials</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="#instructor-led" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop">Instructor-led training</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="#recommended" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop">Browse content library</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="#learn" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop">All Learning</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg is-hidden">
+                     <a href="#search" class="navbar-link is-hidden" title="Search Results">Search Results</a>
+                  </div>
+               </div>
+               <a class="collapsible is-padded-left-0 is-flex navbar-item has-text-weight-bold is-hidden-desktop" data-collapsible="true" data-label="Documentation">
+                  <div class="has-align-start is-padded-left-0 navbar-link is-arrowless">Documentation</div>
+                  <div class="has-align-end navbar-link is-arrowless">
+                     <figure class="image is-16x16 is-inline-block" data-label="Documentation">
+                        <img src="/assets/img/chevron_right.svg" loading="lazy" alt="Expand menu">
+                     </figure>
+                  </div>
+               </a>
+               <div class="content is-margin-left-big is-margin-bottom-big" data-content="true" data-label="Documentation">
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="/docs/?lang=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Documentation">Documentation home</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="/docs/release-notes/experience-cloud/current.html?lang=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Experience Cloud release notes">Experience Cloud release notes</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//helpx.adobe.com/lt/acrobat/using/whats-new.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Document Cloud release notes" target="_blank">Document Cloud release notes</a>
+                  </div>
+               </div>
+               <a class="collapsible is-padded-left-0 is-flex navbar-item has-text-weight-bold is-hidden-desktop" data-collapsible="true" data-label="Community">
+                  <div class="has-align-start is-padded-left-0 navbar-link is-arrowless">Community</div>
+                  <div class="has-align-end navbar-link is-arrowless">
+                     <figure class="image is-16x16 is-inline-block" data-label="Community">
+                        <img src="/assets/img/chevron_right.svg" loading="lazy" alt="Expand menu">
+                     </figure>
+                  </div>
+               </a>
+               <div class="content is-margin-left-big is-margin-bottom-big" data-content="true" data-label="Community">
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Community home" target="_blank">Community home</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-advertising-cloud/ct-p/adobe-advertising-cloud-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Advertising Cloud" target="_blank">Advertising Cloud</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Analytics" target="_blank">Analytics</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-audience-manager/ct-p/adobe-audience-manager-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Audience Manager" target="_blank">Audience Manager</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Campaign Standard" target="_blank">Campaign Standard</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-cloud/ct-p/adobe-experience-cloud-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Experience Cloud" target="_blank">Experience Cloud</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Experience Manager" target="_blank">Experience Manager</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Experience Platform" target="_blank">Experience Platform</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//magento.com/community" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Magento Commerce" target="_blank">Magento Commerce</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//nation.marketo.com/" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Marketo Engage" target="_blank">Marketo Engage</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/t5/adobe-target/ct-p/adobe-target-community?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Target" target="_blank">Target</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//one.workfront.com/s/community" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Workfront, an Adobe company" target="_blank">Workfront, an Adobe company</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="#feedback" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Feedback Panel">Feedback Panel</a>
+                  </div>
+               </div>
+               <a class="collapsible is-padded-left-0 is-flex navbar-item has-text-weight-bold is-hidden-desktop" data-collapsible="true" data-label="Support">
+                  <div class="has-align-start is-padded-left-0 navbar-link is-arrowless">Support</div>
+                  <div class="has-align-end navbar-link is-arrowless">
+                     <figure class="image is-16x16 is-inline-block" data-label="Support">
+                        <img src="/assets/img/chevron_right.svg" loading="lazy" alt="Expand menu">
+                     </figure>
+                  </div>
+               </a>
+               <div class="content is-margin-left-big is-margin-bottom-big" data-content="true" data-label="Support">
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="/?lang=en&amp;support-solution=General#support" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Experience Cloud support">Experience Cloud support</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//helpx.adobe.com/support/document-cloud.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Document Cloud support" target="_blank">Document Cloud support</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Community forums" target="_blank">Community forums</a>
+                  </div>
+               </div>
+               <a class="collapsible is-padded-left-0 is-flex navbar-item has-text-weight-bold is-hidden-desktop" data-collapsible="true" data-label="Resources">
+                  <div class="has-align-start is-padded-left-0 navbar-link is-arrowless">Resources</div>
+                  <div class="has-align-end navbar-link is-arrowless">
+                     <figure class="image is-16x16 is-inline-block" data-label="Resources">
+                        <img src="/assets/img/chevron_right.svg" loading="lazy" alt="Expand menu">
+                     </figure>
+                  </div>
+               </a>
+               <div class="content is-margin-left-big is-margin-bottom-big" data-content="true" data-label="Resources">
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.io/" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Courses" target="_blank">Adobe I/O</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//status.adobe.com/" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Adobe status" target="_blank">Adobe status</a>
+                  </div>
+               </div>
+               <a class="collapsible is-padded-left-0 is-flex navbar-item has-text-weight-bold is-hidden-desktop" data-collapsible="true" data-label="Adobe Account">
+                  <div class="has-align-start is-padded-left-0 navbar-link is-arrowless">Adobe Account</div>
+                  <div class="has-align-end navbar-link is-arrowless">
+                     <figure class="image is-16x16 is-inline-block" data-label="Adobe Account">
+                        <img src="/assets/img/chevron_right.svg" loading="lazy" alt="Expand menu">
+                     </figure>
+                  </div>
+               </a>
+               <div class="content is-margin-left-big is-margin-bottom-big" data-content="true" data-label="Adobe Account">
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//account.adobe.com/" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Log in to your account" target="_blank">Log in to your account</a>
+                  </div>
+               </div>
+               <a class="collapsible is-padded-left-0 is-flex navbar-item has-text-weight-bold is-hidden-desktop" data-collapsible="true" data-label="Adobe">
+                  <div class="has-align-start is-padded-left-0 navbar-link is-arrowless">Adobe</div>
+                  <div class="has-align-end navbar-link is-arrowless">
+                     <figure class="image is-16x16 is-inline-block" data-label="Adobe">
+                        <img src="/assets/img/chevron_right.svg" loading="lazy" alt="Expand menu">
+                     </figure>
+                  </div>
+               </a>
+               <div class="content is-margin-left-big is-margin-bottom-big" data-content="true" data-label="Adobe">
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/about-adobe.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="About" target="_blank">About</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/careers.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Careers" target="_blank">Careers</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//news.adobe.com/home/default.aspx" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Newsroom" target="_blank">Newsroom</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/corporate-responsibility.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Corporate responsibility" target="_blank">Corporate responsibility</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/investor-relations.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Investor Relations" target="_blank">Investor Relations</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/corporate-responsibility/supply-chain.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Supply chain" target="_blank">Supply chain</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/trust.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Trust Center" target="_blank">Trust Center</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/events.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Events" target="_blank">Events</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/diversity.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Diversity &amp; Inclusion" target="_blank">Diversity &amp; Inclusion</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/about-adobe/integrity.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="Integrity" target="_blank">Integrity</a>
+                  </div>
+                  <div class="navbar-item is-paddingless no-bg">
+                     <a href="//www.adobe.com/covid-19-response.html" class="navbar-link is-padded-left-0 is-arrowless no-bg is-hidden-desktop" title="COVID-19 Responses" target="_blank">COVID-19 Responses</a>
+                  </div>
+               </div>
+               <div class="collapsible is-hidden-desktop"></div>
+            </div>
+            <div class="is-padded-left-0 is-padded-right-0 is-margin-bottom-big-big is-hidden-touch">
+               <div class="columns is-variable is-8">
+                  <div class="column is-one-fifth">
+                     <div class="is-margin-bottom-big">
+                        <h4 class="has-text-weight-semibold is-margin-bottom-small">Learn</h4>
+                        <ul class="list-no-style">
+                           <li class="is-margin-bottom-small">
+                              <a href="#courses" data-id="courses" title="Courses">Courses</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="#dashboard/learning" class="is-hidden" title="Recommended courses" disabled="">Recommended courses</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="/docs/home-tutorials.html?lang=en" title="Tutorials">Tutorials</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="#instructor-led" title="Instructor-led">Instructor-led training</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="#recommended" title="Courses">Browse all content</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="#learn" title="View all learning options">View all learning options</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="column is-one-fifth">
+                     <div class="is-margin-bottom-big">
+                        <h4 class="has-text-weight-semibold is-margin-bottom-small">Documentation</h4>
+                        <ul class="list-no-style">
+                           <li class="is-margin-bottom-small">
+                              <a href="/docs/?lang=en" title="Documentation">Documentation home</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="/docs/release-notes/experience-cloud/current.html?lang=en" title="Experience Cloud release notes">Experience Cloud release notes</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//helpx.adobe.com/lt/acrobat/using/whats-new.html" title="Document Cloud release notes" target="_blank">Document Cloud release notes</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="column is-one-fifth">
+                     <div class="is-margin-bottom-big">
+                        <h4 class="has-text-weight-semibold is-margin-bottom-small">Community</h4>
+                        <ul class="list-no-style">
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" title="Community home" target="_blank">Community home</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-advertising-cloud/ct-p/adobe-advertising-cloud-community?profile.language=en" title="Advertising Cloud" target="_blank">Advertising Cloud</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=en" title="Analytics" target="_blank">Analytics</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-audience-manager/ct-p/adobe-audience-manager-community?profile.language=en" title="Audience Manager" target="_blank">Audience Manager</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-campaign-standard/ct-p/adobe-campaign-standard-community?profile.language=en" title="Campaign Standard" target="_blank">Campaign Standard</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-cloud/ct-p/adobe-experience-cloud-community?profile.language=en" title="Experience Cloud" target="_blank">Experience Cloud</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=en" title="Experience Manager" target="_blank">Experience Manager</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=en" title="Experience Platform" target="_blank">Experience Platform</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//magento.com/community" title="Magento Commerce" target="_blank">Magento Commerce</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//nation.marketo.com/" title="Marketo Engage" target="_blank">Marketo Engage</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/t5/adobe-target/ct-p/adobe-target-community?profile.language=en" title="Target" target="_blank">Target</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//one.workfront.com/s/community" title="Workfront, an Adobe company" target="_blank">Workfront, an Adobe company</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="#feedback" title="Feedback Panel">Feedback Panel</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="column is-one-fifth">
+                     <div class="is-margin-bottom-big">
+                        <h4 class="has-text-weight-semibold is-margin-bottom-small">Support</h4>
+                        <ul class="list-no-style">
+                           <li class="is-margin-bottom-small">
+                              <a href="/?lang=en&amp;support-solution=General#support" title="Experience Cloud support">Experience Cloud support</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//helpx.adobe.com/support/document-cloud.html" title="Document Cloud support" target="_blank">Document Cloud support</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//experienceleaguecommunities.adobe.com/?profile.language=en" title="Community forums" target="_blank">Community forums</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="is-margin-bottom-big">
+                        <h4 class="has-text-weight-semibold is-margin-bottom-small">Resources</h4>
+                        <ul>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.io/" title="Courses" target="_blank">Adobe I/O</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//status.adobe.com/" title="Adobe status" target="_blank">Adobe status</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="is-margin-bottom-big">
+                        <h4 class="has-text-weight-semibold is-margin-bottom-small">Adobe Account</h4>
+                        <ul>
+                           <li class="is-margin-bottom-small">
+                              <a href="//account.adobe.com/" title="Courses" target="_blank">Log in to your account</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="column is-one-fifth">
+                     <div class="is-margin-bottom-big">
+                        <h4 class="has-text-weight-semibold is-margin-bottom-small">Adobe</h4>
+                        <ul class="list-no-style">
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/about-adobe.html" title="About" target="_blank">About</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/careers.html" title="Careers" target="_blank">Careers</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//news.adobe.com/home/default.aspx" title="Newsroom" target="_blank">Newsroom</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/corporate-responsibility.html" title="Corporate responsibility" target="_blank">Corporate responsibility</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/investor-relations.html" title="Investor Relations" target="_blank">Investor Relations</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/corporate-responsibility/supply-chain.html" title="Supply chain" target="_blank">Supply chain</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/trust.html" title="Trust Center" target="_blank">Trust Center</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/events.html" title="Events" target="_blank">Events</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/diversity.html" title="Diversity &amp; Inclusion" target="_blank">Diversity &amp; Inclusion</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/about-adobe/integrity.html" title="Integrity" target="_blank">Integrity</a>
+                           </li>
+                           <li class="is-margin-bottom-small">
+                              <a href="//www.adobe.com/covid-19-response.html" title="COVID-19 Responses" target="_blank">COVID-19 Responses</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>

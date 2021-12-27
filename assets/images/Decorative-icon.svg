@@ -1,0 +1,13 @@
+<svg id="Decorative_icon" data-name="Decorative icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Placement_Area" data-name="Placement Area" fill="red" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+    <rect width="16" height="16" stroke="none"/>
+    <rect x="0.5" y="0.5" width="15" height="15" fill="none"/>
+  </g>
+  <g id="Icon">
+    <g id="Canvas" fill="#505050" stroke="#505050" stroke-width="1" opacity="0">
+      <rect width="16" height="16" stroke="none"/>
+      <rect x="0.5" y="0.5" width="15" height="15" fill="none"/>
+    </g>
+    <path id="Path_185154" data-name="Path 185154" d="M13.117,5.337l-2.85,0a9.269,9.269,0,0,0,.348-2.635A1.65,1.65,0,0,0,9.234,1,1.445,1.445,0,0,0,7.806,2.371C7.6,4.345,5.52,5.952,4.426,6.433A.431.431,0,0,0,4.046,6.2H1.435A.434.434,0,0,0,1,6.633v6.933A.434.434,0,0,0,1.435,14H4.046a.434.434,0,0,0,.435-.433v-.433h6.285a2.019,2.019,0,0,0,1.8-1.05L14.3,7.2a1.3,1.3,0,0,0-1.179-1.86Zm.394,1.484-1.748,4.921a.8.8,0,0,1-.758.534l-6.523-.009V7.327c1.248-.5,3.982-2.394,4.195-4.94a.6.6,0,0,1,.557-.52c.265,0,.488.322.51.84A6.5,6.5,0,0,1,8.984,6.2h4.134a.433.433,0,0,1,.392.621Z" fill="#6e6e6e"/>
+  </g>
+</svg>
