@@ -27,6 +27,7 @@ h1:not(:last-child) {
 .text-center {
   text-align: center;
 }
+
 .text-italic{
   font-style: italic;
 }
@@ -717,6 +718,16 @@ span.data-name{
   }
 }
 @include bp(tabletview){
+  .resp-flex-wrap{
+    flex-wrap: wrap;
+  }
+  .resp-pd-left-0{
+    padding-left: 0 !important;
+  }
+  .support_table thead {
+    td,th{white-space: nowrap;}
+    
+  }
   .articles-inner{
     min-height: unset;
     .article_bottom_sec{

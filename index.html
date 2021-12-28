@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> 
 <html class="spectrum spectrum--medium spectrum--light">
    <head>
@@ -16,10 +15,6 @@
       <link rel="stylesheet" href="node_modules/@spectrum-css/picker/dist/index-vars.css">
    </head>
    <body>
-
- 
-       
- 
       <nav id="nav" class="navbar" role="navigation" aria-label="Main navigation">
          <div class="container">
             <div class="navbar-brand">
@@ -346,20 +341,15 @@
          <div class="support_tab_wrapper w-100 relative is-flex light-grey-bg">
             <span class="sidebar-collapse"><img src="assets/images/direction-ico.png" /> </span>
             <div class="buttonWrapper left_support_tabs_sec ">
-               
                <span class="remove_sidebar"><img src="assets/images/whitepaper-cross.png" /></span>
-               
                <!-- select box-->
-
                <div class="wrap-drop is-relative is-margin-bottom-big-big is-padded-left-big" id="noble-gases">
                   <img src="assets/images/selectboxicon.svg"  class="is-margin-right-small "/> <span class="is-margin-right-small"> All Noble Gases</span>
                   <ul class="drop">
-                      <li class="selected is-relative"><a>Townsend Medical</a></li>
-                      <li class="is-relative"><a>Bodea Inc.</a></li>
-                      
+                     <li class="selected is-relative"><a>Townsend Medical</a></li>
+                     <li class="is-relative"><a>Bodea Inc.</a></li>
                   </ul>
-              </div>
-
+               </div>
                <!-- -->
                <span class="has-text-black has-text-weight-bold  is-inline-block is-padded-left-big-big is-margin-bottom-small"> Support</span>
                <div class="container">
@@ -719,11 +709,11 @@
                   <!-- Troubleshooting section-->
                </div>
                <div class="content p-0" id="MyCases">
-                  <div class="banner_outer_sec is-padded-top-big-big ">
+                  <div class="banner_outer_sec is-padded-top-big-big resp-padding">
                      <div>
-                        <h2 class="title is-1 m-0 has-text-weight-bold">All your cases, in one place.</h2>
+                        <h2 class="title is-size-1-desktop is-size-3-mobile m-0 has-text-weight-bold">All your cases, in one place.</h2>
                         <p class="is-size-6 mt-3  has-text-blackest ">Loream ipusm dolor sit,Loream ipusm dolor sit Loream ipusm dolor sit</p>
-                        <div class="is-flex is-justify-content-space-between	">
+                        <div class="is-flex is-justify-content-space-between	resp-flex-wrap">
                            <div class="is-flex w-100">
                               <div class="is-padded-right-big-big">
                                  <label class="is-size-7	has-text-grey	">Products</label>
@@ -745,7 +735,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="w-100 is-padded-left-big-big-big-big-big">
+                           <div class="w-100 is-padded-left-big-big-big-big-big resp-pd-left-0">
                               <label class="is-size-7	 has-text-grey	">Search</label>
                               <input type="text"  class="input" placeholder="Search in cases"/>
                            </div>
@@ -753,75 +743,77 @@
                      </div>
                   </div>
                   <!-- case table section-->
-                  <div class="  is-padded-top-big-big-big-big">
-                     <table class="support_table w-100">
-                        <thead>
-                           <tr>
-                              <th>
-                                 CASE NUMBER
-                              </th>
-                              <th>
-                                 SUBJECT / ADDITIONAL INFORMATION
-                              </th>
-                              <th>
-                                 STATUS
-                              </th>
-                              <th>
-                                 OPENED / Closed
-                              </th>
-                              <th>
-                                 Contact name
-                              </th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td>12345678</td>
-                              <td>Loream ipusm dolor amit. Loream ipusm dolor </td>
-                              <td><span class="status_view radius-50 is-inline-block
-                                 is-margin-right-small"> </span>In Review </td>
-                              <td>30-5-2020 05:34:06</td>
-                              <td>Albin Hartmann</td>
-                           </tr>
-                           <tr>
-                              <td>12345678</td>
-                              <td>Loream ipusm dolor amit. Loream ipusm dolor amit  Loream ipusm dolor</td>
-                              <td><span class="status_view radius-50 is-inline-block
-                                 is-margin-right-small"> </span>In Review </td>
-                              <td>30-5-2020 05:34:06</td>
-                              <td>Albin Hartmann</td>
-                           </tr>
-                           <tr>
-                              <td>12345678</td>
-                              <td>Loream ipusm dolor amit. Loream ipusm d </td>
-                              <td><span class="status_view radius-50 is-inline-block
-                                 is-margin-right-small"> </span>In Review </td>
-                              <td>30-5-2020 05:34:06</td>
-                              <td>Albin Hartmann</td>
-                           </tr>
-                           <tr>
-                              <td>12345678</td>
-                              <td>Loream ipusm dolor amit. Loream ipusm</td>
-                              <td><span class="status_view radius-50 is-inline-block
-                                 is-margin-right-small"> </span>In Review </td>
-                              <td>30-5-2020 05:34:06</td>
-                              <td>Albin Hartmann</td>
-                           </tr>
-                           <tr>
-                              <td>12345678</td>
-                              <td>Loream ipusm dolor amit. Loream ipusm  </td>
-                              <td><span class="status_view radius-50 is-inline-block
-                                 is-margin-right-small"> </span>In Review </td>
-                              <td>30-5-2020 05:34:06</td>
-                              <td>Albin Hartmann</td>
-                           </tr>
-                        </tbody>
-                     </table>
+                  <div class="  is-padded-top-big-big-big-big ">
+                     <div class="table-container">
+                        <table class="support_table w-100 table">
+                           <thead>
+                              <tr>
+                                 <th>
+                                    CASE NUMBER
+                                 </th>
+                                 <th>
+                                    SUBJECT / ADDITIONAL INFORMATION
+                                 </th>
+                                 <th>
+                                    STATUS
+                                 </th>
+                                 <th>
+                                    OPENED / Closed
+                                 </th>
+                                 <th>
+                                    Contact name
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>12345678</td>
+                                 <td>Loream ipusm dolor amit. Loream ipusm dolor </td>
+                                 <td><span class="status_view radius-50 is-inline-block
+                                    is-margin-right-small"> </span>In Review </td>
+                                 <td>30-5-2020 05:34:06</td>
+                                 <td>Albin Hartmann</td>
+                              </tr>
+                              <tr>
+                                 <td>12345678</td>
+                                 <td>Loream ipusm dolor amit. Loream ipusm dolor amit  Loream ipusm dolor</td>
+                                 <td><span class="status_view radius-50 is-inline-block
+                                    is-margin-right-small"> </span>In Review </td>
+                                 <td>30-5-2020 05:34:06</td>
+                                 <td>Albin Hartmann</td>
+                              </tr>
+                              <tr>
+                                 <td>12345678</td>
+                                 <td>Loream ipusm dolor amit. Loream ipusm d </td>
+                                 <td><span class="status_view radius-50 is-inline-block
+                                    is-margin-right-small"> </span>In Review </td>
+                                 <td>30-5-2020 05:34:06</td>
+                                 <td>Albin Hartmann</td>
+                              </tr>
+                              <tr>
+                                 <td>12345678</td>
+                                 <td>Loream ipusm dolor amit. Loream ipusm</td>
+                                 <td><span class="status_view radius-50 is-inline-block
+                                    is-margin-right-small"> </span>In Review </td>
+                                 <td>30-5-2020 05:34:06</td>
+                                 <td>Albin Hartmann</td>
+                              </tr>
+                              <tr>
+                                 <td>12345678</td>
+                                 <td>Loream ipusm dolor amit. Loream ipusm  </td>
+                                 <td><span class="status_view radius-50 is-inline-block
+                                    is-margin-right-small"> </span>In Review </td>
+                                 <td>30-5-2020 05:34:06</td>
+                                 <td>Albin Hartmann</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
                      <!--Case title section -->
                      <div class="columns is-multiline is-marginless has-text-blackest is-padded-bottom-big-big is-padded-top-big-big-big-big light-grey-bg">
-                        <div class="column  is-full-mobile is-8-desktop ">
+                        <div class="column  is-full-tablet is-8-desktop ">
                            <div>
-                              <div class="is-flex is-justify-content-space-between	">
+                              <div class="is-flex is-justify-content-space-between resp-flex-wrap	">
                                  <h2 class="has-text-weight-bold is-size-28 is-size-27-touch  is-marginless ">Case title cons adipiscing elit, sed do eiusmod  </h2>
                                  <a href="#" class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM radius-5-imp   py-1 px-2 ">
                                  <span class="spectrum-Button-label">In Review</span>
@@ -842,7 +834,7 @@
                               <ul class="support_user_comment list-no-style"">
                                  <li >
                                     <div class=" border radius-5 has-background-white  is-padded-small">
-                                       <div class="is-flex is-vcentered is-justify-content-space-between	 is-margin-bottom-big">
+                                       <div class="is-flex is-vcentered is-justify-content-space-between	 is-margin-bottom-big resp-flex-wrap">
                                           <div class="is-flex is-vcentered">
                                              <span class="support_user_img"></span> <span class="is-padded-left-small">Mange Schoen | Support Engineer</span> 
                                           </div>
@@ -855,7 +847,7 @@
                                  </li>
                                  <li >
                                     <div class=" border radius-5 has-background-white  is-padded-small">
-                                       <div class="is-flex is-vcentered is-justify-content-space-between	 is-margin-bottom-big">
+                                       <div class="is-flex is-vcentered is-justify-content-space-between	 is-margin-bottom-big resp-flex-wrap">
                                           <div class="is-flex is-vcentered">
                                              <span class="support_user_img"></span> 
                                              <span class="is-padded-left-small">Mange Schoen | Support Engineer</span> 
@@ -867,11 +859,11 @@
                                        <p>@kyke smith loream smith sit amet, dolor. loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor  loream smith sit amet, dolor   </p>
                                     </div>
                                     <div>
-                                       <div class="is-flex is-justify-content-space-between	is-align-content-center	px-3">
+                                       <div class="is-flex is-justify-content-space-between	is-align-content-center	is-padded-left-big is-padded-right-big resp-flex-wrap">
                                           <p>Madge schon changed this case from open to in Review</p>
                                           <span>31-05-2020 11:42:17</span>
                                        </div>
-                                       <div class="is-flex is-justify-content-space-between	is-align-content-center	px-3">
+                                       <div class="is-flex is-justify-content-space-between	is-align-content-center	is-padded-left-big is-padded-right-big resp-flex-wrap">
                                           <p>Madge schon changed this case from open to in Review</p>
                                           <span>31-05-2020 11:42:17</span>
                                        </div>
@@ -879,7 +871,7 @@
                                  </li>
                                  <li >
                                     <div class=" border radius-5 has-background-white  is-padded-small">
-                                       <div class="is-flex is-vcentered is-justify-content-space-between	 is-margin-bottom-big">
+                                       <div class="is-flex is-vcentered is-justify-content-space-between	 is-margin-bottom-big resp-flex-wrap">
                                           <div class="is-flex is-vcentered">
                                              <span class="support_user_img"></span> <span class="is-padded-left-small">Mange Schoen | Support Engineer</span> 
                                           </div>
@@ -893,9 +885,9 @@
                               </ul>
                            </div>
                         </div>
-                        <div class="column   is-hidden-touch is-4-desktop ">
-                           <section class="support_case_sidebar has-background-white	radius-5  border is-padded-top-big-big-big is-padded-bottom-big-big is-padded-left-big-big  is-padded-right-big-big">
-                              <h2 class="is-size-4		has-text-weight-bold"> Case Detail</h2>
+                        <div class="column   is-full-tablet is-4-desktop ">
+                           <section class="support_case_sidebar has-background-white	radius-5  border is-padded-top-big-big is-padded-bottom-big-big is-padded-left-big-big  is-padded-right-big-big is-margin-bottom-big">
+                              <h2 class="is-size-4		has-text-weight-bold border-bottom is-padded-bottom-big"> Case Detail</h2>
                               <ul class="list-no-style">
                                  <li class="pb-3">
                                     <div>
@@ -924,9 +916,9 @@
                                  <li class="pb-3">
                                     <div>
                                        <span class="is-size-7	has-text-weight-bold has-text-black is-block ">WATCHERS</span>
-                                       <a href="mailto:Gussie94@hotmail.com" class="tag py-2 border radius-5 is-size-7	mr-2 has-text-grey mb-1">Gussie94@hotmail.com</a>
-                                       <a href="mailto:Gussie94@hotmail.com"  class="tag py-2 border radius-5 is-size-7	mr-2 has-text-grey mb-1">Gussie94@hotmail.com</a>
-                                       <a href="mailto:Gussie94@hotmail.com"  class="tag py-2 border radius-5 is-size-7	mr-2 has-text-grey mb-1">Gussie94@hotmail.com</a>
+                                       <a href="mailto:Gussie94@hotmail.com" class="tag py-2 border radius-5 is-size-7	is-margin-right-small has-text-grey is-margin-bottom-small">Gussie94@hotmail.com</a>
+                                       <a href="mailto:Gussie94@hotmail.com"  class="tag py-2 border radius-5 is-size-7	is-margin-right-small has-text-grey is-margin-bottom-small">Gussie94@hotmail.com</a>
+                                       <a href="mailto:Gussie94@hotmail.com"  class="tag py-2 border radius-5 is-size-7	is-margin-right-small has-text-grey is-margin-bottom-small">Gussie94@hotmail.com</a>
                                     </div>
                                  </li>
                               </ul>
@@ -1345,6 +1337,5 @@
       </div>
       <script src="assets/js/jquery.js"></script>
       <script src="assets/js/script.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
    </body>
 </html>

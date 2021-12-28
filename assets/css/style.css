@@ -29198,6 +29198,18 @@ ul.support_user_comment li:last-child:after {
   }
 }
 @media (max-width: 768px) {
+  .resp-flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .resp-pd-left-0 {
+    padding-left: 0 !important;
+  }
+
+  .support_table thead td, .support_table thead th {
+    white-space: nowrap;
+  }
+
   .articles-inner {
     min-height: unset;
   }
