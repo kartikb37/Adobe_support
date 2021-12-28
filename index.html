@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html> 
 <html class="spectrum spectrum--medium spectrum--light">
    <head>
       <meta charset="utf-8">
@@ -10,11 +11,55 @@
       <link rel="stylesheet" href="node_modules/@spectrum-css/vars/dist/spectrum-light.css">
       <link rel="stylesheet" href="node_modules/@spectrum-css/page/dist/index-vars.css">
       <link rel="stylesheet" href="node_modules/@spectrum-css/button/dist/index-vars.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-      <style>
-      </style>
+      <link rel="stylesheet" href="node_modules/@spectrum-css/picker/dist/index-vars.css">
+      <link rel="stylesheet" href="node_modules/@spectrum-css/icon/dist/index-vars.css">
+      
+
    </head>
    <body>
+
+      <button class="spectrum-Picker spectrum-Picker--sizeM spectrum-Picker--quiet is-invalid" aria-haspopup="listbox">
+         <span class="spectrum-Picker-label">Ballard</span>
+         <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Picker-validationIcon" focusable="false" aria-hidden="true" aria-label="Alert">
+           <use xlink:href="#spectrum-icon-18-Alert" />
+         </svg>
+         <svg class="spectrum-Icon spectrum-UIIcon-ChevronDown100 spectrum-Picker-menuIcon" focusable="false" aria-hidden="true">
+           <use xlink:href="#spectrum-css-icon-Chevron100" />
+         </svg>
+       </button>
+       <div class="spectrum-Popover spectrum-Popover--bottom spectrum-Picker-popover spectrum-Picker-popover--quiet is-open">
+         <ul class="spectrum-Menu" role="listbox">
+           <li class="spectrum-Menu-item is-selected" role="option" aria-selected="true" tabindex="0">
+             <span class="spectrum-Menu-itemLabel">Ballard</span>
+             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+               <use xlink:href="#spectrum-css-icon-Checkmark100" />
+             </svg>
+           </li>
+           <li class="spectrum-Menu-item" role="option" tabindex="0">
+             <span class="spectrum-Menu-itemLabel">Fremont</span>
+             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+               <use xlink:href="#spectrum-css-icon-Checkmark100" />
+             </svg>
+           </li>
+           <li class="spectrum-Menu-item" role="option" tabindex="0">
+             <span class="spectrum-Menu-itemLabel">Greenwood</span>
+             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+               <use xlink:href="#spectrum-css-icon-Checkmark100" />
+             </svg>
+           </li>
+           <li class="spectrum-Menu-divider" role="separator"></li>
+           <li class="spectrum-Menu-item is-disabled" role="option" aria-disabled="true">
+             <span class="spectrum-Menu-itemLabel">United States of America</span>
+             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
+               <use xlink:href="#spectrum-css-icon-Checkmark100" />
+             </svg>
+           </li>
+         </ul>
+       </div>
+       
+ 
+       
+      
       <nav id="nav" class="navbar" role="navigation" aria-label="Main navigation">
          <div class="container">
             <div class="navbar-brand">
@@ -341,6 +386,7 @@
          <div class="support_tab_wrapper w-100 relative is-flex light-grey-bg">
             <span class="sidebar-collapse"><img src="assets/images/direction-ico.png" /> </span>
             <div class="buttonWrapper left_support_tabs_sec ">
+             
                <span class="remove_sidebar"><img src="assets/images/whitepaper-cross.png" /></span>
                <span class="has-text-black has-text-weight-bold  is-inline-block is-padded-left-big-big is-margin-bottom-small"> Support</span>
                <div class="container">
@@ -363,7 +409,7 @@
                <div class="contentWrapper">
                   <div class="content p-0 active m-0" id="home">
                      <!-- Banner Section --> 
-                     <div class="banner_outer_sec  is-padded-bottom-big-big-big can_help is-padded-left-big ">
+                     <div class=" is-relative banner_outer_sec overlay-resp is-padded-bottom-big-big-big can_help is-padded-left-big ">
                         <div class="banner_sec_support is-padded-top-big-big ">
                            <h1 class="title is-1 m-0 is-size-2-tablet is-size-3-mobile has-text-weight-bold	">How can we help? </h1>
                            <h2 class="is-size-5	 has-text-weight-normal mt-0">Search for help and support here.</h2>
@@ -382,7 +428,7 @@
                      <!-- Cards Section -->
                      <div class="is-padded-bottom-big-big-big is-padded-top-big   is-padded-right-big-big resp-padding ">
                         <div class="columns  is-multiline  ">
-                           <div class="column is-6 pl-0">
+                           <div class="column is-6 ">
                               <div class="cards-inner  is-padded-bottom-big-big radius-5 support_ticket is-padded-top-big-big-big has-background-white hoverbox ">
                                  <div class="is-padded-left-big-big is-padded-right-big-big">
                                     <h2 class="is-margin-bottom-big has-text-blackest is-size-4	 has-text-weight-bold "> Open a support ticket.</h2>
@@ -411,9 +457,9 @@
                      <!-- Cards Section -->
                      <!-- Article section-->
                      <div class="is-padded-right-big-big resp-padding">
-                        <h2 class="has-text-weight-bold is-size-4	   m-0 is-padded-left-small is-margin-left-small"> Top support articles.</h2>
+                        <h2 class="has-text-weight-bold is-size-4	    is-padded-left-small is-margin-left-small is-padded-bottom-big is-margin-bottom-0"> Top support articles.</h2>
                         <div class=" article-main-sec columns  is-multiline">
-                           <div class="column is-half is-one-quarter-desktop ">
+                           <div class="column is-3-desktop is-6-tablet">
                               <div class=" articles-inner radius-5 has-background-white	hoverbox ">
                                  <h3  class="is-size-7	has-text-weight-bold sup-head-color	l-space is-padded-bottom-big m-0">ANALYTICS TUTORIAL </h3>
                                  <h4 class="is-size-5	has-text-weight-bold">How Analytics Data is</h4>
@@ -430,7 +476,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="column is-half is-one-quarter-desktop ">
+                           <div class="column is-3-desktop is-6-tablet ">
                               <div class="articles-inner radius-5 has-background-white	hoverbox ">
                                  <h3 class="is-size-7	has-text-weight-bold sup-head-color	l-space is-padded-bottom-big m-0"> TARGET DOCUMENTATION </h3>
                                  <h4 class="is-size-5	has-text-weight-bold">Try in Workspace Button  </h4>
@@ -446,7 +492,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="column is-half is-one-quarter-desktop ">
+                           <div class="column is-3-desktop is-6-tablet ">
                               <div class=" articles-inner radius-5 has-background-white	hoverbox " >
                                  <h3 class="is-size-7	has-text-weight-bold sup-head-color	l-space is-padded-bottom-big m-0"> ANALYTICS DOCUMENTATION </h3>
                                  <h4 class="is-size-5	has-text-weight-bold">Adobe Analytics dashboards  </h4>
@@ -462,7 +508,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="column is-half is-one-quarter-desktop ">
+                           <div class="column is-3-desktop is-6-tablet ">
                               <div class=" articles-inner radius-5 has-background-white	hoverbox ">
                                  <h3 class="is-size-7	has-text-weight-bold sup-head-color	l-space is-padded-bottom-big m-0"> ANALYTICS TUTORIAL </h3>
                                  <h4 class="is-size-5	has-text-weight-bold">Training Tutorial Template</h4>
@@ -482,7 +528,7 @@
                      </div>
                      <!-- Article section-->
                      <!-- Need sec-->
-                     <div class=" resp-padding is-padded-bottom-big is-padded-top-big-big-big   is-padded-right-big-big is-margin-right-small">
+                     <div class=" resp-padding is-padded-bottom-big is-padded-top-big-big-big   is-padded-right-big-big is-margin-right-small is-padded-left-small is-margin-left-small">
                         <div class="main-need-sec is-padded-bottom-big-big is-padded-top-big-big-big border radius-5 has-background-white is-relative  hoverbox">
                            <div class="container">
                               <div class="columns">
@@ -503,11 +549,11 @@
                         <h2 class="has-text-weight-bold is-size-4	 is-margin-bottom-big   is-padded-left-small is-margin-left-small">Additional Learning resourses.</h2>
                         <div class="columns is-multiline ">
                            <div class="column is-4-desktop is-6-tablet ">
-                              <div class="support_learning_inner_sec border columns  has-background-white hoverbox">
-                                 <div class="supprot_learning_image_sec">
+                              <div class="support_learning_inner_sec border columns  has-background-white hoverbox ">
+                                 <div class="supprot_learning_image_sec is-3-tablet column p-0">
                                     <img src="assets/images/ad-resourses-3.png" alt="Learning Resourses" /> 
                                  </div>
-                                 <div class="support_learning_descp_sec">
+                                 <div class="support_learning_descp_sec is-9-tablet column">
                                     <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
                                     <h4 class="is-size-6  is-marginless	 has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Develope the skills with personalized learning in Adobe Experience League.</h4>
                                  </div>
@@ -515,10 +561,10 @@
                            </div>
                            <div class="column is-4-desktop is-6-tablet is-12-mobile">
                               <div class="support_learning_inner_sec border columns  has-background-white hoverbox">
-                                 <div class="supprot_learning_image_sec">
+                                 <div class="supprot_learning_image_sec is-3-tablet column p-0">
                                     <img src="assets/images/ad-resourses-2.png"  alt="Learning Resourses"/> 
                                  </div>
-                                 <div class="support_learning_descp_sec">
+                                 <div class="support_learning_descp_sec is-9-tablet column">
                                     <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
                                     <h4 class="is-size-6  is-marginless	 has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Develope the skills with personalized learning in Adobe Experience League.</h4>
                                  </div>
@@ -526,10 +572,10 @@
                            </div>
                            <div class="column is-4-desktop is-6-tablet">
                               <div class="support_learning_inner_sec border columns  has-background-white hoverbox">
-                                 <div class="supprot_learning_image_sec">
+                                 <div class="supprot_learning_image_sec is-3-tablet column p-0">
                                     <img src="assets/images/ad-resourses.svg"  alt="Learning Resourses"/> 
                                  </div>
-                                 <div class="support_learning_descp_sec">
+                                 <div class="support_learning_descp_sec is-9-tablet column">
                                     <h3 class="head-sm"> ANALYTICS DOCUMENTATION </h3>
                                     <h4 class="is-size-6  is-marginless	 has-text-weight-bold is-margin-top-big is-margin-bottom-small has-text-blackest">Develope the skills with personalized learning in Adobe Experience League.</h4>
                                  </div>
@@ -541,7 +587,7 @@
                      <!-- Here to  help-->
                      <div class="resp-padding is-padded-left-big is-padded-right-big-big is-margin-right-small">
                         <div class="has-text-centered	is-padded-top-big-big-big-big is-padded-bottom-big-big-big-big support_help_sec is-relative has-background-white hoverbox">
-                           <h2 class="is-size-2	 has-text-weight-bold  is-margin-bottom-big "> We are here to help.</h2>
+                           <h2 class="is-size-2-desktop is-size-3-tablet	 has-text-weight-bold  is-margin-bottom-big "> We are here to help.</h2>
                            <p class="is-size-6 mb-5">Sign into Adobe Experience League and find your answers.</p>
                            <button data-id="signin" class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM">
                            <span class="spectrum-Button-label">Sign In</span>
@@ -1326,5 +1372,6 @@
       </div>
       <script src="assets/js/jquery.js"></script>
       <script src="assets/js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
    </body>
 </html>
