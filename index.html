@@ -11,55 +11,15 @@
       <link rel="stylesheet" href="node_modules/@spectrum-css/vars/dist/spectrum-light.css">
       <link rel="stylesheet" href="node_modules/@spectrum-css/page/dist/index-vars.css">
       <link rel="stylesheet" href="node_modules/@spectrum-css/button/dist/index-vars.css">
-      <link rel="stylesheet" href="node_modules/@spectrum-css/picker/dist/index-vars.css">
       <link rel="stylesheet" href="node_modules/@spectrum-css/icon/dist/index-vars.css">
-      
-
+      <link rel="stylesheet" href="node_modules/@spectrum-css/popover/dist/index-vars.css">
+      <link rel="stylesheet" href="node_modules/@spectrum-css/picker/dist/index-vars.css">
    </head>
    <body>
 
-      <button class="spectrum-Picker spectrum-Picker--sizeM spectrum-Picker--quiet is-invalid" aria-haspopup="listbox">
-         <span class="spectrum-Picker-label">Ballard</span>
-         <svg class="spectrum-Icon spectrum-Icon--sizeM spectrum-Picker-validationIcon" focusable="false" aria-hidden="true" aria-label="Alert">
-           <use xlink:href="#spectrum-icon-18-Alert" />
-         </svg>
-         <svg class="spectrum-Icon spectrum-UIIcon-ChevronDown100 spectrum-Picker-menuIcon" focusable="false" aria-hidden="true">
-           <use xlink:href="#spectrum-css-icon-Chevron100" />
-         </svg>
-       </button>
-       <div class="spectrum-Popover spectrum-Popover--bottom spectrum-Picker-popover spectrum-Picker-popover--quiet is-open">
-         <ul class="spectrum-Menu" role="listbox">
-           <li class="spectrum-Menu-item is-selected" role="option" aria-selected="true" tabindex="0">
-             <span class="spectrum-Menu-itemLabel">Ballard</span>
-             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
-               <use xlink:href="#spectrum-css-icon-Checkmark100" />
-             </svg>
-           </li>
-           <li class="spectrum-Menu-item" role="option" tabindex="0">
-             <span class="spectrum-Menu-itemLabel">Fremont</span>
-             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
-               <use xlink:href="#spectrum-css-icon-Checkmark100" />
-             </svg>
-           </li>
-           <li class="spectrum-Menu-item" role="option" tabindex="0">
-             <span class="spectrum-Menu-itemLabel">Greenwood</span>
-             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
-               <use xlink:href="#spectrum-css-icon-Checkmark100" />
-             </svg>
-           </li>
-           <li class="spectrum-Menu-divider" role="separator"></li>
-           <li class="spectrum-Menu-item is-disabled" role="option" aria-disabled="true">
-             <span class="spectrum-Menu-itemLabel">United States of America</span>
-             <svg class="spectrum-Icon spectrum-UIIcon-Checkmark100 spectrum-Menu-checkmark spectrum-Menu-itemIcon" focusable="false" aria-hidden="true">
-               <use xlink:href="#spectrum-css-icon-Checkmark100" />
-             </svg>
-           </li>
-         </ul>
-       </div>
-       
  
        
-      
+ 
       <nav id="nav" class="navbar" role="navigation" aria-label="Main navigation">
          <div class="container">
             <div class="navbar-brand">
@@ -386,8 +346,21 @@
          <div class="support_tab_wrapper w-100 relative is-flex light-grey-bg">
             <span class="sidebar-collapse"><img src="assets/images/direction-ico.png" /> </span>
             <div class="buttonWrapper left_support_tabs_sec ">
-             
+               
                <span class="remove_sidebar"><img src="assets/images/whitepaper-cross.png" /></span>
+               
+               <!-- select box-->
+
+               <div class="wrap-drop is-relative is-margin-bottom-big-big is-padded-left-big" id="noble-gases">
+                  <img src="assets/images/selectboxicon.svg"  class="is-margin-right-small "/> <span class="is-margin-right-small"> All Noble Gases</span>
+                  <ul class="drop">
+                      <li class="selected is-relative"><a>Townsend Medical</a></li>
+                      <li class="is-relative"><a>Bodea Inc.</a></li>
+                      
+                  </ul>
+              </div>
+
+               <!-- -->
                <span class="has-text-black has-text-weight-bold  is-inline-block is-padded-left-big-big is-margin-bottom-small"> Support</span>
                <div class="container">
                   <a href="#" class="support_tab_button active is-flex is-vcentered w-100 is-relative"  data-id="home">
@@ -598,9 +571,9 @@
                   </div>
                </div>
                <div class="content p-0" id="Open_Ticket">
-                  <div class="banner_outer_sec is-padded-top-big-big is-relative">
+                  <div class="banner_outer_sec is-padded-top-big-big is-relative resp-padding">
                      <div class="banner_sec_support open-ticket ">
-                        <h2 class="title is-2  text-center is-margin-bottom-big-big has-text-weight-bold has-text-black	">Hi Derek, let's open a ticket </h2>
+                        <h2 class="set-index title is-size-2-tablet is-size-3-mobile  text-center is-margin-bottom-big-big has-text-weight-bold has-text-black	">Hi Derek, let's open a ticket </h2>
                         <div class="left_banner">
                            <img src="assets/images/opencase_Left_banner.svg"  /> 
                         </div>
@@ -608,7 +581,7 @@
                            <img src="assets/images/open_case_Right_banner.svg" />
                         </div>
                         <form class="support_form_sec">
-                           <label class="is-inline-block  has-text-weight-bold is-margin-bottom-small is-size-5">Select a product.</label>
+                           <label class="set-index is-inline-block  has-text-weight-bold is-margin-bottom-small is-size-5-tablet">Select a product.</label>
                            <div class="select is-fullwidth h-100 is-margin-bottom-big">
                               <select name="priority">
                                  <option value="P1 - Critical Business Impact">Select a product...</option>
@@ -616,11 +589,11 @@
                               </select>
                            </div>
                            <div class="is-margin-bottom-big">
-                              <label class="is-inline-block has-text-weight-bold is-margin-bottom-small is-size-5">Case Title</label>
+                              <label class=" set-index is-inline-block has-text-weight-bold is-margin-bottom-small is-size-5-tablet set-index">Case Title</label>
                               <input type="text" class="w-100 border radius-5 is-padded-bottom-big is-padded-top-big is-padded-left-big is-padded-right-big is-size-6	 "/>
                            </div>
                            <div>
-                              <label class=" is-inline-block  has-text-weight-bold is-margin-bottom-small is-size-5">Case description.</label>
+                              <label class="set-index is-inline-block  has-text-weight-bold is-margin-bottom-small is-size-5-tablet">Case description.</label>
                               <textarea placeholder="Tell us about your issue..." class="w-100 border radius-5 is-padded-bottom-big is-padded-top-big is-padded-left-big is-padded-right-big  is-size-6	"> </textarea>
                            </div>
                         </form>
@@ -701,7 +674,7 @@
                   </div>
                   <!-- Trobleshooting section-->
                   <div class="light-grey-bg">
-                     <div class="container is-padded-bottom-big-big-big is-padded-top-big-big-big ">
+                     <div class="container is-padded-bottom-big-big-big is-padded-top-big-big-big  resp-padding">
                         <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big ">Common troubleshooting topics.</h2>
                         <div class="columns">
                            <div class="column is-4  support_popular_topics">
