@@ -28793,7 +28793,6 @@ body {
   left: 0;
   margin: auto;
 }
-
 .support_tab_right_cta {
   position: absolute;
   right: 100px;
@@ -29145,6 +29144,25 @@ ul.support_user_comment li:last-child:after {
 }
 .wrap-drop span {
   color: #928579;
+}
+
+.support_banner_items a {
+  border: 1px solid #8E8E8E;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+.progress-bar {
+  background: #32805C;
+  height: 15px;
+}
+
+.drag-drop input {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
 }
 
 /****************** Media Query ******************/

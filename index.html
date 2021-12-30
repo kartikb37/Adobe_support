@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html class="spectrum spectrum--medium spectrum--light">
+<html class="sapectrum spectrum--medium spectrum--light">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -333,6 +333,7 @@
          </div>
       </nav>
       <div class="support_msg_sec w-100">
+         <div class="progress-bar w-100"></div>
          <p class="m-0 has-text-white	is-size-6 has-text-centered is-padded-top is-padded-bottom">
             You are not a support entitled user within this organization. Contact your System Admin for additional support. <a href="#" title="Learn more" class="has-text-white">Learn more</a> 
          </p>
@@ -357,19 +358,18 @@
                   <img src="assets/images/Hometab.svg"  alt="Home" class="is-margin-right-small	" />
                   Home
                   </a>
-                  <a href="#" class="support_tab_button is-flex is-vcentered w-100 is-relative" data-id="Open_Ticket">
+                  <a href="#" class="support_tab_button is-flex is-vcentered w-100 is-relative disable-btn" data-id="Open_Ticket">
                   <img src="assets/images/opencase.svg"  alt="Open Case" class="is-margin-right-small	" />
                   <span class="tabs-tooltip has-text-white	is-size-7	is-marginless">Opening a case requires entitlement.</span>
                   Open Ticket
                   </a>
-                  <a href="#" class="support_tab_button is-flex is-vcentered w-100 is-relative"  data-id="MyCases">
+                  <a href="#" class="support_tab_button is-flex is-vcentered w-100 is-relative disable-btn"  data-id="MyCases">
                   <img src="assets/images/Mycases.svg"  alt="Mycases" class="is-margin-right-small	" />
                   <span class="tabs-tooltip has-text-white	is-size-7	is-marginless">Opening a case requires entitlement.</span>
                   My Cases</a>
                </div>
             </div>
             <div class="right_support_tabs_sec">
-               <div class="contentWrapper">
                   <div class="content p-0 active m-0" id="home">
                      <!-- Banner Section --> 
                      <div class=" is-relative banner_outer_sec overlay-resp is-padded-bottom-big-big-big can_help is-padded-left-big ">
@@ -385,6 +385,15 @@
                               </p>
                            </div>
                            <p><a href="#" title="Sign in" class="has-text-info">Sign in</a> to create a case, view open cases, and switch between your organizations.</p>
+                           <div class="is-flex  flex-direction-row ">
+                              <span class="has-text-black has-text-weight-bold">Common troubleshooting topics:</span>
+                              <div class="support_banner_items is-padded-left-small">
+                                 <a href="#" title="manage entitlements" class=" radius-5 med-grey is-margin-right-small ">manage entitlements</a>
+                                 <a href="#" title="troubleshoot forms" class=" radius-5 med-grey is-margin-right-small">troubleshoot forms</a>
+                                 <a href="#" title="security best practices" class=" radius-5 med-grey is-margin-right-small">security best practices</a>
+                                 <a href="#" title="user attribution" class=" radius-5 med-grey is-margin-right-small">user attribution</a>
+                              </div>
+                           </div>
                         </div>
                      </div>
                      <!-- Banner Section -->
@@ -559,7 +568,6 @@
                      </div>
                      <!-- Here to  help-->
                   </div>
-               </div>
                <div class="content p-0" id="Open_Ticket">
                   <div class="banner_outer_sec is-padded-top-big-big is-relative resp-padding">
                      <div class="banner_sec_support open-ticket ">
@@ -645,23 +653,46 @@
                               </div>
                               <label class="is-inline-block  has-text-weight-bold is-margin-bottom-small is-size-5">Who else should we keep up to date? (Optional)</label>
                               <textarea class=" has-background-white radius-5 border" id="tag-input1">  </textarea>
-                        </div>
-                        <div class="is-margin-top-big upload-image-sec radius-5 is-flex is-vcentered is-justify-content-center">
-                        <div>
-                        Select attachments or drag & drop
-                        </div>  
-                        </div>
+                              <div class="is-relative is-margin-top-big upload-image-sec radius-5 is-flex is-vcentered is-justify-content-center">
+                              <form class="drag-drop">
+                                 <input type="file" />
+                              </form>
+
+                                 <div>
+                                    Select attachments or drag & drop
+                                  </div>  
+                              </div>   
+                           </form>
+                           </div>
+                          
                         <div class="is-pulled-right	is-margin-top-big-big is-flex is-vcentered">
-                        <a href="#" class="is-padded-right-big has-text-grey	">Add attachments</a> 
-                        <button data-id="signin" class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM">
-                        <span class="spectrum-Button-label is-padded-left-small is-padded-right-small ">Submit case</span>
-                        </button>
+                           <a href="#" class="is-padded-right-big has-text-grey	">Add attachments</a> 
+                            <button data-id="signin" class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM">
+                               <span class="spectrum-Button-label is-padded-left-small is-padded-right-small ">Submit case</span>
+                            </button>
                         </div>
-                        <div class="is-clearfix"></div>
-                        </form>
+                         <div class="is-clearfix"></div>
+                      
                         <!-- -->
                      </div>
                   </div>
+                  <!-- Need sec-->
+                  <div class=" resp-padding is-padded-bottom-big is-padded-top-big-big-big   is-padded-right-big-big is-margin-right-small is-padded-left-small is-margin-left-small">
+                     <div class="main-need-sec is-padded-bottom-big-big is-padded-top-big-big-big border radius-5 has-background-white is-relative  hoverbox">
+                        <div class="container">
+                           <div class="columns">
+                              <div class="is-6 column is-padded-left-big-big-big-big-big">
+                                 <h2 class="has-text-weight-bold is-size-28 is-size-27-touch is-margin-bottom-big ">Support when you need it.</h2>
+                                 <p>Loream ipusm Loream ipusm Loream ipusm Loream ipusm Loream ipusm Loream ipusm Loream ipusm .</p>
+                                 <button class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM  is-padded-left-big is-padded-right-big">
+                                 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold" title="Feedback Panel"> Get started</span>
+                                 </button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Need sec-->
                   <!-- Trobleshooting section-->
                   <div class="light-grey-bg">
                      <div class="container is-padded-bottom-big-big-big is-padded-top-big-big-big  resp-padding">
@@ -966,9 +997,7 @@
                <!-- case table section-->
             </div>
          </div>
-      </div>
-      </div>
-      <div class="support_tab_right_cta"><a href="#" title="Organization Name">Organization Name </a> </div>
+         <div class="support_tab_right_cta"><a href="#" title="Organization Name">Organization Name </a> </div>
       </div>
       <div id="footer" class="footer">
          <div class="container">

@@ -316,6 +316,9 @@ body {
 
       }
   }
+  &.disable-btn{
+    // pointer-events: none;
+  }
   }
 }
 .support_tab_right_cta {
@@ -663,7 +666,22 @@ span.data-name{
   span{  color:#928579;}
 }
   
-  
+  .support_banner_items {
+    a{border: 1px solid #8E8E8E;font-size: $base-size - 2px; padding: 2px 5px;}
+  }
+  .progress-bar{
+    background: #32805C;
+    height: 15px;
+    
+  }
+  .drag-drop {
+    input{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }}
 /****************** Media Query ******************/
 @include bp(desktoptolaptopview){
   .cards-inner{
