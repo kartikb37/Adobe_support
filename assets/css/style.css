@@ -29146,6 +29146,14 @@ ul.support_user_comment li:last-child:after {
   color: #928579;
 }
 
+.drag-drop input {
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
 .support_banner_items a {
   border: 1px solid #8E8E8E;
   font-size: 12px;
@@ -29155,14 +29163,6 @@ ul.support_user_comment li:last-child:after {
 .progress-bar {
   background: #32805C;
   height: 15px;
-}
-
-.drag-drop input {
-  position: absolute;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
 }
 
 /****************** Media Query ******************/
